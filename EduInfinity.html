@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduInfinity - Your Learning Hub</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background: url('your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            position: relative;
+        }
+
+        /* Background Overlay for Readability */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
+        }
+
+        /* Header Styling */
+        h1 {
+            font-size: 2.8em;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        /* Subject Icons Grid */
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .subject {
+            width: 120px;
+            height: 120px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+        .subject:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: #222;
+            color: white;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div> <!-- Background overlay for readability -->
+
+    <h1>EduInfinity - Your Learning Hub</h1>
+    <hr>
+    <p>Explore a world of knowledge with EduInfinity.</p>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <!-- Subject Icons Grid -->
+    <div class="subjects">
+        <a href="math.html"><img class="subject" src="https://iconduck.com/icons/183747/math" alt="Math - Numbers and Calculations"></a>
+        <a href="science.html"><img class="subject" src="https://www.flaticon.com/free-icon/science_190124" alt="Science - Discover the Universe"></a>
+        <a href="history.html"><img class="subject" src="https://www.flaticon.com/free-icon/history_32223" alt="History - Learn from the Past"></a>
+        <a href="language.html"><img class="subject" src="https://www.flaticon.com/free-icon/language_484633" alt="Language - Master Communication"></a>
+        <a href="tamil.html"><img class="subject" src="https://iconscout.com/icon/tamil-5016148" alt="Tamil - Explore a Rich Language"></a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        © 2025 EduInfinity | All Rights Reserved
+    </div>
+
+</body>
+</html>
